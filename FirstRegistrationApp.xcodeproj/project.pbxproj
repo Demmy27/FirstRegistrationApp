@@ -13,7 +13,7 @@
 		345E769A21E88DD40011ACB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345E769921E88DD40011ACB7 /* Assets.xcassets */; };
 		345E769D21E88DD40011ACB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345E769B21E88DD40011ACB7 /* LaunchScreen.storyboard */; };
 		345E76A821E88DD40011ACB7 /* FirstRegistrationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E76A721E88DD40011ACB7 /* FirstRegistrationAppTests.swift */; };
-		348BC3A721E8D75F003D260B /* SigningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BC3A621E8D75F003D260B /* SigningModel.swift */; };
+		5B0BE07BF6CEE655365A9BF1 /* ValidatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0BEA050944003FF51D4298 /* ValidatingTextField.swift */; };
 		6488206C581F9C2728CB691D /* Pods_FirstRegistrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5394D0804D43DDBD6080510A /* Pods_FirstRegistrationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +39,8 @@
 		345E76A321E88DD40011ACB7 /* FirstRegistrationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstRegistrationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E76A721E88DD40011ACB7 /* FirstRegistrationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRegistrationAppTests.swift; sourceTree = "<group>"; };
 		345E76A921E88DD40011ACB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		348BC3A621E8D75F003D260B /* SigningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningModel.swift; sourceTree = "<group>"; };
 		5394D0804D43DDBD6080510A /* Pods_FirstRegistrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstRegistrationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0BEA050944003FF51D4298 /* ValidatingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatingTextField.swift; sourceTree = "<group>"; };
 		DC8A7A76AD22A44595E02129 /* Pods-FirstRegistrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstRegistrationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstRegistrationApp/Pods-FirstRegistrationApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 				345E769921E88DD40011ACB7 /* Assets.xcassets */,
 				345E769B21E88DD40011ACB7 /* LaunchScreen.storyboard */,
 				345E769E21E88DD40011ACB7 /* Info.plist */,
-				348BC3A621E8D75F003D260B /* SigningModel.swift */,
+				5B0BEA050944003FF51D4298 /* ValidatingTextField.swift */,
 			);
 			path = FirstRegistrationApp;
 			sourceTree = "<group>";
@@ -233,7 +233,10 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FirstRegistrationApp/Pods-FirstRegistrationApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UnderLineTextField/UnderLineTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -241,7 +244,10 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UnderLineTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,8 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				345E769521E88DD20011ACB7 /* ViewController.swift in Sources */,
-				348BC3A721E8D75F003D260B /* SigningModel.swift in Sources */,
 				345E769321E88DD20011ACB7 /* AppDelegate.swift in Sources */,
+				5B0BE07BF6CEE655365A9BF1 /* ValidatingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

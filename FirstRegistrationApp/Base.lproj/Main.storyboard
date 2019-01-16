@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDw-ZH-tqM" userLabel="NameTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDw-ZH-tqM" userLabel="NameTextField" customClass="ValidatingTextField" customModule="FirstRegistrationApp" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="120" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="bOL-n1-gkA"/>
@@ -26,22 +26,37 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorTextColor">
+                                        <color key="value" red="1" green="0.071388130074082512" blue="0.10827574860815781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-wX-CJr" userLabel="PasswordTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-wX-CJr" userLabel="PasswordTextField" customClass="ValidatingTextField" customModule="FirstRegistrationApp" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="380" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorTextColor">
+                                        <color key="value" red="1" green="0.07138813007" blue="0.1082757486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pe-0P-fwN">
-                                <rect key="frame" x="141.5" y="537" width="92" height="30"/>
-                                <state key="normal" title="Регистрация"/>
+                                <rect key="frame" x="146" y="537" width="83" height="30"/>
+                                <state key="normal" title="Registration"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSx-P9-fFX" userLabel="EmailTextFiled">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSx-P9-fFX" userLabel="EmailTextFiled" customClass="ValidatingTextField" customModule="FirstRegistrationApp" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="250" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorTextColor">
+                                        <color key="value" red="1" green="0.07138813007" blue="0.1082757486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,9 +75,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="EmailTextFileld" destination="gSx-P9-fFX" id="FhL-kg-PR9"/>
-                        <outlet property="NameTextField" destination="HDw-ZH-tqM" id="vB9-jO-yyU"/>
-                        <outlet property="PasswordTextFiled" destination="SVg-wX-CJr" id="A0e-mE-aDu"/>
+                        <outlet property="emailTextField" destination="gSx-P9-fFX" id="FhL-kg-PR9"/>
+                        <outlet property="nameTextField" destination="HDw-ZH-tqM" id="vB9-jO-yyU"/>
+                        <outlet property="passwordTextFiled" destination="SVg-wX-CJr" id="A0e-mE-aDu"/>
+                        <outlet property="registrationButton" destination="5pe-0P-fwN" id="Qkt-dh-euW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
